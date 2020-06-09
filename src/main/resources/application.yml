@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql:///bookshelf?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 12345678
+      driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.zyf.notebook.entity
+  mapper-locations: classpath:mapper/*.xml
+
+
+management:
+  server:
+    port: 9999
+    servlet:
+      context-path: /aynu
+  endpoints:
+    web:
+      base-path: /java
+      exposure:
+        include: "*"
+        exclude: ["info", "env"]    # 排除指定的监控终端
+    # include: ["env", "health"]
+    #include:
+    #  - env
+    #  - health
