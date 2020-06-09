@@ -92,6 +92,7 @@ public class NoteBookController {
     public Map<String,Object> saveNoteMd( Note note){
         //System.out.println(noteId);
         System.out.println(note);
+        System.out.println("zzzz");
         if (note.getContentMd()==null){
             note.setContentMd("请添加笔记");
         }
