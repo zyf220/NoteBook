@@ -41,7 +41,7 @@
 
         <!-- 配置需要指定生成的数据库和表，% 代表所有表 -->
         <!--去除example-->
-        <table catalog="bookshelf" tableName="%"  enableCountByExample="false" enableUpdateByExample="false"
+        <table catalog="bookshelf" tableName="plan"  enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
             <!-- mysql 配置 -->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>

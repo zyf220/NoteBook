@@ -8,14 +8,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 public class NotebookImpl implements NoteBookService {
 
-    @Autowired
+    @Resource
     CategoryMapper categoryMapper;
-    @Autowired
+    @Resource
     NoteMapper noteMapper;
     @Override
     public List<Category> findAllCategory() {
